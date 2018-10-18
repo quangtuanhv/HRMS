@@ -32,33 +32,7 @@
             </div>
           </div>
         </div>
-        <!-- Count item widget-->
-        {{-- <div class="col-xl-2 col-md-4 col-6">
-          <div class="wrapper count-title d-flex">
-            <div class="icon"><i class="icon-bill"></i></div>
-            <div class="name"><strong class="text-uppercase"></strong><span>Last 2 days</span>
-              <div class="count-number">123</div>
-            </div>
-          </div>
-        </div>
-        <!-- Count item widget-->
-        <div class="col-xl-2 col-md-4 col-6">
-          <div class="wrapper count-title d-flex">
-            <div class="icon"><i class="icon-list"></i></div>
-            <div class="name"><strong class="text-uppercase">Open Cases</strong><span>Last 3 months</span>
-              <div class="count-number">92</div>
-            </div>
-          </div>
-        </div>
-        <!-- Count item widget-->
-        <div class="col-xl-2 col-md-4 col-6">
-          <div class="wrapper count-title d-flex">
-            <div class="icon"><i class="icon-list-1"></i></div>
-            <div class="name"><strong class="text-uppercase">New Cases</strong><span>Last 7 days</span>
-              <div class="count-number">70</div>
-            </div>
-          </div>
-        </div> --}}
+        
       </div>
     </div>
   </section>

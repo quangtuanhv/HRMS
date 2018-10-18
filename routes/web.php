@@ -27,3 +27,8 @@ Route::get('/bo-phan', 'bophanController@index');
 Route::post('/tao-moi-bo-phan','bophanController@insert');
 Route::post('/sua-bo-phan','bophanController@update');
 Route::post('/xoa-bo-phan','bophanController@delete');
+
+Route::get('/tao-moi-nhan-vien','nhanvienController@create');
+Route::post('/tao-moi-nhan-vien','nhanvienController@store');
+Route::get('/danh-sach-nhan-vien','nhanvienController@index');
+Route::get('/thong-tin-chi-tiet','nhanvienController@show');

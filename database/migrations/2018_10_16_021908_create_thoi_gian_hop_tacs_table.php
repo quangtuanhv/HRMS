@@ -16,7 +16,7 @@ class CreateThoiGianHopTacsTable extends Migration
         Schema::create('thoi_gian_hop_tacs', function (Blueprint $table) {
             $table->increments('id');
             $table->date('ngay_bat_dau');
-            $table->date('ngay_ket_thuc');
+            $table->date('ngay_ket_thuc')->nullable();
             $table->unsignedInteger('user_id');
             $table->foreign('user_id')
             ->references('id')->on('nhan_sus')

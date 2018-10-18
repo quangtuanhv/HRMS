@@ -18,6 +18,10 @@ class CreateThongTinTaiKhoanNganHangsTable extends Migration
             $table->string('ten_ngan_hang');
             $table->string('so_tai_khoan');
             $table->string('kich_hoat');
+            $table->unsignedInteger('nhan_su_id');
+            $table->foreign('nhan_su_id')
+            ->references('id')->on('nhan_sus')
+            ->onDelete('cascade');
             $table->timestamps();
         });
     }

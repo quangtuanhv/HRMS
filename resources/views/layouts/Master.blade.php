@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Bootstrap Dashboard by Bootstrapious.com</title>
+    <title>Chương trình quản lý nhân sự | Đồ án tốt nghiệp</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="all,follow">
@@ -29,6 +29,7 @@
         <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
     <script src="vendor/jquery/jquery.min.js"></script>
+    @yield('header')
 
   </head>
   <body>
@@ -50,6 +51,7 @@
 
           <ul id="side-main-menu" class="side-menu list-unstyled">                  
             <li><a href="{{url('/')}}"> <i class="icon-home"></i>Trang chủ</a></li>
+            <li><a href="{{url('/danh-sach-nhan-vien')}}"> <i class="fa fa-user"></i>Danh sách nhân viên</a></li>
             <li><a href="charts.html"> <i class="fa fa-bar-chart"></i>Quản lý thông tin</a></li>
             <li><a href="forms.html"> <i class="icon-flask"></i>Quản lý bảo hiểm</a></li>
             <li><a href="forms.html"> <i class="icon-form"></i>Quản lý hợp đồng</a></li>
@@ -61,6 +63,8 @@
                 <li><a href="{{url('/bo-phan')}}">Bộ phận</a></li>
               </ul>
             </li>
+            <li><a href="{{url('/tao-moi-nhan-vien')}}"> <i class="icon-grid"></i>Tạo mới nhân viên</a></li>
+
           </ul>
         </div>
       </div>

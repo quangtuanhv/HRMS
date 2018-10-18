@@ -25,10 +25,6 @@ class CreateNhanSusTable extends Migration
             $table->foreign('bo_phan_id')
             ->references('id')->on('bo_phans')
             ->onDelete('cascade');
-            $table->unsignedInteger('ngan_hang_id');
-            $table->foreign('ngan_hang_id')
-            ->references('id')->on('thong_tin_tai_khoan_ngan_hangs')
-            ->onDelete('cascade');
             $table->timestamps();
         });
     }
