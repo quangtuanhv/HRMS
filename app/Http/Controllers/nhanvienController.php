@@ -67,6 +67,7 @@ class nhanvienController extends Controller
             $tght = new ThoiGianHopTac;
             $tght->ngay_bat_dau = $request->ngaybatdaulamviec;
             $tght->user_id = $user->id;
+            $tght->save();
             return redirect('/danh-sach-nhan-vien')->with('notification', 'Thêm nhân viên thành công');
 
     }
@@ -78,7 +79,7 @@ class nhanvienController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function show($id)
-    {
+    {   
         $nhanvien = NhanSu::where('id',$id)->first();
         return view('quanlynhanvien.thongtinnhanvien', compact('nhanvien'));
     }

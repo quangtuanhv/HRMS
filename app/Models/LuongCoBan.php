@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class HeSoLuong extends Model
+class LuongCoBan extends Model
 {
     public function luongcanbo()
     {

@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateHeSoLuongCanBosTable extends Migration
+class CreateLuongCanBosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,15 @@ class CreateHeSoLuongCanBosTable extends Migration
      */
     public function up()
     {
-        Schema::create('he_so_luong_can_bos', function (Blueprint $table) {
+        Schema::create('luong_can_bos', function (Blueprint $table) {
             $table->increments('id');
             $table->unsignedInteger('nhan_su_id');
             $table->foreign('nhan_su_id')
             ->references('id')->on('nhan_sus')
+            ->onDelete('cascade');
+            $table->unsignedInteger('luong_co_ban_id');
+            $table->foreign('luong_co_ban_id')
+            ->references('id')->on('luong_co_bans')
             ->onDelete('cascade');
             $table->unsignedInteger('he_so_luong_id');
             $table->foreign('he_so_luong_id')
@@ -25,6 +29,7 @@ class CreateHeSoLuongCanBosTable extends Migration
             ->onDelete('cascade');
             $table->date('ngay');
             $table->string('ap_dung');
+            $table->string('tongluong');
             $table->timestamps();
         });
     }
@@ -36,6 +41,6 @@ class CreateHeSoLuongCanBosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('he_so_luong_can_bos');
+        Schema::dropIfExists('luong_can_bos');
     }
 }
